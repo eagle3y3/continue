@@ -1059,6 +1059,14 @@
           "if": {
             "properties": {
               "provider": {
+                "enum": ["fireworks"]
+              }
+            },
+            "required": ["provider"]
+          },
+          "then": {
+            "properties": {
+              "model": {
                 "enum": [
                   "starcoder-7b",
                   "llama-v3p1-405b-instruct",
@@ -1144,14 +1152,6 @@
                   "yi-6b",
                   "zephyr-7b-beta"
                 ]
-              }
-            },
-            "required": ["provider"]
-          },
-          "then": {
-            "properties": {
-              "model": {
-                "enum": ["starcoder-7b"]
               }
             }
           }
